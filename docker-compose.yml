@@ -1,0 +1,10 @@
+version: '3'
+services:
+  arxiv-sanity-preserver:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_ENV: development
